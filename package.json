@@ -1,0 +1,35 @@
+{
+    "name": "boxy-font",
+    "version": "1.0.0",
+    "description": "Fancy square font",
+    "keywords": [
+        "boxy",
+        "font",
+        "box",
+        "square",
+        "console",
+        "box drawing"
+    ],
+    "homepage": "https://github.com/azrael25/boxy-font",
+    "license": "MIT",
+    "author": "Dmitry Mulyavka",
+    "files": [
+        "main.js",
+        "utils.js"
+    ],
+    "main": "main.js",
+    "repository": "https://github.com/azrael25/boxy-font.git",
+    "scripts": {
+        "build": "rollup src/main.js -c && rollup src/utils.js -c",
+        "test": "jest ./test.js"
+    },
+    "devDependencies": {
+        "@babel/core": "7.1.2",
+        "@babel/preset-env": "7.1.0",
+        "babel-core": "7.0.0-bridge.0",
+        "babel-jest": "23.6.0",
+        "jest": "23.6.0",
+        "rollup": "0.66.4",
+        "rollup-plugin-babel-minify": "6.1.0"
+    }
+}
